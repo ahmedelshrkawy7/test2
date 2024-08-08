@@ -1,0 +1,72 @@
+// we use prototype for not declare functions every time we make a instant
+
+
+
+// privte method 
+
+function inside a function
+
+function employee (){
+
+  function welcome (){
+
+    alert ("welcome "+ this.emp.name)
+ 
+ }
+
+welcome()
+
+ }
+
+
+
+/// implicit  vs   explicit 
+
+
+if there is no object before function calls => this is implicit to window object
+
+
+to avoid this we => explicit pinding
+
+welcoming.call(this)   ====    var val = welcoming.bind(this);  +++  val()
+
+val ==> hard binding
+
+/////////////////////////////////////this and closure
+
+window.setTimeout
+
+
+solution ==> var _this = this
+
+
+
+////////////////// ============= inheritance  =============== //////////
+
+ inheritance ==> prototypal inheritance
+
+1- pesudo classical
+     ===> child.prototype = new Parent()  // we make call to parent constructor
+
+
+2-
+
+   child.protoype = parent.prototype   // this inherit prototype           only  
+
+
+========> the solution
+
+
+
+
+
+
+
+
+
+
+
+
+=> prototype shadowing
+
+
